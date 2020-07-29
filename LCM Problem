@@ -1,0 +1,18 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+	int t;
+	int l,r;
+	cin>>t;
+	while(t--){
+		cin>>l>>r;
+		int sum=l*2;
+		if(sum<=r){
+			cout<<l<<" "<<sum<<endl;
+		}
+		else{
+			cout<<-1<<" "<<-1<<endl;
+		}
+		
+	}
+}
