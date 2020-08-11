@@ -1,0 +1,28 @@
+# cook your dish here
+for _ in range(int(input())):
+    c,r=map(int,input().split())
+    pc=""
+    pr=""
+    if c%9==0:
+        div=c//9
+        pc+=div*'9'
+    else:
+        div=c//9
+        mod=c%9
+        pc+=div*'9'+str(mod)
+
+    if r%9==0:
+        div=r//9
+        pr+=div*'9'
+    else:
+        div=r//9
+        mod=r%9
+        pr+=div*'9'+str(mod)
+    chef=len(pc)
+    rolf=len(pr)
+    if chef>rolf:
+        print(1,rolf)
+    elif chef==rolf:
+        print(1,rolf)
+    elif chef<rolf:
+        print(0,chef)
